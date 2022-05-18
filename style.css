@@ -10,9 +10,22 @@ body {
 }
 
 
+.table{
+  border: 1px solid black;
+  color: black;
+  background-color: #FFF;
+}
+
 #GOWR {
   width: 100%;
   height: 100%;
+}
+
+.rectangle{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #FFF;
 }
 
 .titulo {
@@ -71,11 +84,6 @@ body {
   margin-bottom: 16px;
 }
 
-.mb-24 {
-  margin-bottom: 24px;
-}
-
-
 img {
   max-width: 100%;
 }
@@ -90,6 +98,14 @@ p strong {
 
 header {
   background-image: url(images/GOWL.jpg);
+}
+
+th {
+  text-align: left;
+}
+
+.miniTitles{
+  color:var(--color-brand);
 }
 
 .no-overflow {
@@ -153,4 +169,22 @@ header {
 
 .end{
   justify-content: end;
+}
+
+.moved {
+  transition: all 0.35s ease-in-out;
+  transform: translateY(130px);
+}
+
+.moved p {
+  transition: all 0.35s ease-in-out;
+  opacity: 0;
+}
+
+.hero:hover .moved {
+  transform: translateY(0px);
+}
+
+.hero:hover .moved p{
+  opacity: 1;
 }

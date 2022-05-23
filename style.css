@@ -10,10 +10,16 @@ body {
 }
 
 
-.table{
+.table {
   border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
   color: black;
   background-color: #FFF;
+}
+
+.table td {
+  border: 1px solid black;
 }
 
 #GOWR {
@@ -101,6 +107,10 @@ header {
 }
 
 th {
+  text-align: left;
+}
+
+td{
   text-align: left;
 }
 

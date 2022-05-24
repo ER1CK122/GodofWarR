@@ -198,3 +198,17 @@ td{
 .hero:hover .moved p{
   opacity: 1;
 }
+
+.padding-left-10{
+  padding-left: 10px;
+}
+
+.font-size-16{
+  font-size: 16px;
+}
+
+.table-topics{
+  padding-left: 10px; 
+  border: none; 
+  background-color: var(--color-light-gray);
+}

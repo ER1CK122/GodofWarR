@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>God Of War: Ragnarök - Tabela</title>
-
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="token.css">
-  </head>
-  <body style="background: White">
-    <header class="flex" style="background: White">
-        <div class="container">
-          <div class="flex items-center">
-            <h1 class="Logo"><a href="index.html"><img src="images/GODR1 1.png"></a></h1>
-    
-            <nav class="navbar">
-              <ul>
-                <li class="navbar-item" id="Printout">Proposta de Crédito Bancário</li>
-                <!-- <li class="navbar-item"><a href="index.html">Voltar ao Início</a></li> -->
-              </ul>
-            </nav>
-          </div>     
-        </div>
-      </header>
+<?php 
+  include "header.php"
+?>
 
       <main class="flex flex-collumn">
         <div class="container">
@@ -44,7 +19,7 @@
                 </tr>
 
                 <tr>
-                    <td class="table-topics"><h1><strong>EMITENTE</strong></h1></td>
+                    <td class="table-topics"><h1><strong>EMITENTE e <a href="table.php">Tabela 2</a></strong></h1></td>
                 </tr>
 
                 <tr>
@@ -193,4 +168,6 @@
         <footer style="margin: 50px"></footer>
       </div>       
   </main>
-</body>
+<?php
+  include "footer.php"
+?>

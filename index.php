@@ -1,9 +1,6 @@
 <?php 
   include "header.php"
 ?>
-    
-<main class="flex flex-collumn">
-  <div class="container"> 
     <h1 class="titulo mt-6 mb-6">God of War: Ragnarök</h1>
 
     <p><strong><a href="tabela.php">God of War</a></strong> é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da
@@ -93,9 +90,7 @@
         </tbody>
       </table>
     </div>
-  </div>
-</main>
-
+    <div style="margin-top: 10px"><strong><a href="lista.php">Lista dos Personagens</a></strong></div>
 <?php
   include "footer.php"
 ?>

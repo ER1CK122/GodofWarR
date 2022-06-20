@@ -1,9 +1,6 @@
 <?php 
   include "header.php"
 ?>
-
-      <main class="flex flex-collumn">
-        <div class="container">
           <table class="table">
               <tbody>
                 <tr>

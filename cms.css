@@ -1,0 +1,56 @@
+.navbar.navbar-vertical {
+  height: 100vh;
+  border-right: 1px solid gray;
+}
+
+.navbar.navbar-vertical li a {
+  display: flex;
+  font-size: 24px
+}
+
+nav li a img{
+  margin-right: 10px;
+}
+
+.navbar {
+  height: 90px;
+}
+
+.b-b-1 {
+  border-bottom: 1px solid gray;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo-wrapper {
+  height: 90px;
+  border-bottom: 1px solid gray;
+}
+
+.border-right{
+  border-right: 1px solid #e5e7eb;
+}
+
+.border-left{
+  border-left: 1px solid #e5e7eb;
+}
+
+.side{
+  width: 348px;
+}
+
+.title {
+  width: 50%;
+  font-size: 32px;
+}
+
+.table-b-g{
+  background-color: gray;
+}
+
+table{
+  width: 100%;
+}
+

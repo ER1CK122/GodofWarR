@@ -1,10 +1,6 @@
 <?php 
   include "header.php"
 ?>
-
-      <main  class="flex flex-collumn">
-          <div  class="container">
-
             <div class="bloco-titulo mt-6 mb-6">
                 <h1 class="titulo">Os principais personagens de God of War: Ragnarök</h1>
               </div>          
@@ -24,11 +20,6 @@
                   <a href="thor.php" class="navimg-item no-overflow"><img src="images/Thor.jpg"></a>
                   <a href="angrboda.php" class="navimg-item no-overflow"><img src="images/Angrboda.jpg"></a>
                 </div>
-
-
-          </div>
-             
-      </main>
 <?php
   include "footer.php"
 ?>

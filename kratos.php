@@ -1,10 +1,6 @@
 <?php 
   include "header.php"
 ?>
-
-  <main class="flex flex-collumn">
-    <div class="container">
-
       <h1 class="titulo mt-6 mb-6 "> As Principais Armas do Kratos em God of War: Ragnarök </h1>
 
       <div class="flex">
@@ -35,9 +31,6 @@
               </p>
             </div>
         </div>
-    </div>
-  </main>
-
 <?php
   include "footer.php"
 ?>

@@ -1,0 +1,13 @@
+
+.logo-wrapper {
+  height: 90px;
+  border-bottom: 1px solid gray;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-item a {
+  color: #000;
+}

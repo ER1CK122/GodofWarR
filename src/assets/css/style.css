@@ -4,7 +4,7 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 150%;
-  background-image: url(images/GOWL.jpg);
+  background-image: url(/src/assets/images/GOWL.jpg);
   background-repeat: no-repeat;
   background-color: black;
 }
@@ -37,7 +37,7 @@ body {
 .titulo {
   color: #fff;
   width: 50%;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .background-black{
@@ -103,7 +103,7 @@ p strong {
 }
 
 header {
-  background-image: url(images/GOWL.jpg);
+  background-image: url(/src/assets/images/GOWL.jpg);
 }
 
 th {

@@ -1,5 +1,5 @@
 <?php 
-  include "header.php"
+  include "../template/header.php"
 ?>
 <section>
 <h1>Container Fixo</h1>
@@ -107,5 +107,5 @@
   </div>
 </section>
 <?php
-  include "footer.php"
+  include "../template/footer.php"
 ?>

@@ -1,9 +1,9 @@
 <?php 
-  include "header.php"
+  include "src/template/header.php"
 ?>
     <h1 class="titulo mt-6 mb-6">God of War: Ragnarök</h1>
 
-    <p><strong><a href="tabela.php">God of War</a></strong> é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da
+    <p><strong><a href="pages/tabela.php">God of War</a></strong> é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da
     <strong>Santa Monica Studio</strong>, da Sony. Iniciada em 2005 no console PlayStation 2
     <em><strong>(PS2)</strong></em>, tornou-se carro-chefe para a marca PlayStation, consistindo em oito jogos em
     várias plataformas, com um nono atualmente em desenvolvimento. Baseada em distintas mitologias, a história
@@ -32,18 +32,16 @@
     </div>          
 
     <div class="grid grid-cols-3 grid-gap">
-      <a href="kratos.php" class="navimg-item no-overflow" style="position: relative;">
-        <img src="images/Kratos.jpg">
-      </a>
-      <a href="atreus.php" class="navimg-item no-overflow"><img src="images/Atreus.jpg"></a>
-      <a href="mimir.php" class="navimg-item no-overflow"><img src="images/Mimir.jpg"></a>
-      <a href="freya.php" class="navimg-item no-overflow"><img src="images/Freya.jpg"></a>
-      <a href="brok.php" class="navimg-item no-overflow"><img src="images/Brok.jpg"></a>
-      <a href="sindri.php" class="navimg-item no-overflow"><img src="images/Sindri.jpg"></a>
-      <a href="durlin.php"class="navimg-item no-overflow"><img src="images/Durlin.jpg"></a>
-      <a href="tyr.php" class="navimg-item no-overflow"><img src="images/Tyr.jpg"></a>
-      <a href="thor.php" class="navimg-item no-overflow"><img src="images/Thor.jpg"></a>
-      <a href="angrboda.php" class="navimg-item no-overflow"><img src="images/Angrboda.jpg"></a>
+      <a href="/pages/kratos.php" class="navimg-item no-overflow"><img src="assets/images/Kratos.jpg"></a>
+      <a href="/pages/atreus.php" class="navimg-item no-overflow"><img src="assets/images/Atreus.jpg"></a>
+      <a href="/pages/mimir.php" class="navimg-item no-overflow"><img src="assets/images/Mimir.jpg"></a>
+      <a href="/pages/freya.php" class="navimg-item no-overflow"><img src="assets/images/Freya.jpg"></a>
+      <a href="/pages/brok.php" class="navimg-item no-overflow"><img src="assets/images/Brok.jpg"></a>
+      <a href="/pages/sindri.php" class="navimg-item no-overflow"><img src="assets/images/Sindri.jpg"></a>
+      <a href="/pages/durlin.php"class="navimg-item no-overflow"><img src="assets/images/Durlin.jpg"></a>
+      <a href="/pages/tyr.php" class="navimg-item no-overflow"><img src="assets/images/Tyr.jpg"></a>
+      <a href="/pages/thor.php" class="navimg-item no-overflow"><img src="assets/images/Thor.jpg"></a>
+      <a href="/pages/angrboda.php" class="navimg-item no-overflow"><img src="assets/images/Angrboda.jpg"></a>
     </div>        
 
   
@@ -90,7 +88,7 @@
         </tbody>
       </table>
     </div>
-    <div style="margin-top: 10px"><strong><a href="lista.php">Lista dos Personagens</a></strong></div>
+    <div style="margin-top: 10px"><strong><a href="../app/pages/lista.php">Lista dos Personagens</a></strong></div>
 <?php
-  include "footer.php"
+  include "src/template/footer.php"
 ?>

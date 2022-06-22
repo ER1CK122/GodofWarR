@@ -1,5 +1,5 @@
 <?php 
-  include "header.php"
+  include "../template/header.php"
 ?>
           <table class="table">
               <tbody>
@@ -166,5 +166,5 @@
       </div>       
   </main>
 <?php
-  include "footer.php"
+  include "../template/footer.php"
 ?>

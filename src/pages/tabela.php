@@ -16,7 +16,7 @@
                 </tr>
 
                 <tr>
-                    <td class="table-topics"><h1><strong>EMITENTE e <a href="table.php">Tabela 2</a></strong></h1></td>
+                    <td class="table-topics"><h1><strong>EMITENTE e <a href="pages/table.php">Tabela 2</a></strong></h1></td>
                 </tr>
 
                 <tr>

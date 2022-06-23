@@ -1,31 +1,15 @@
 <?php
-include "/xampp/htdocs/GodofWarR/app/templates/header.php"
-
+include "../../templates/header.php"
 ?>
-  <div class="d-flex">
-    <nav class="">
-      <div class="logo-wrapper border-bottom">
-        <a href="lista.php">
-          <img src="/app/assets/images/GODR1 1.png" alt="" class="">
-        </a>
-      </div>
-      
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img src="../assets/images/personas.png" alt="" style="margin-right: 5px;"> - Personagens</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><img src="./images/maps-icon.png" alt="" style="margin-right: 5px;"> - Lugares</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main style="width: 100%; height:100vh;" class="border-start">
+      <main style="width: 100%; height:100vh;" class="border-start">
       <div style="height:90px" class="border-bottom"></div>
 
       <div class="container">
-        <div class="" style="margin-top: 10px;">
+        <div class="d-flex" style="margin-top: 10px;">
           <h1 class=""><strong>Lista de Personagens de God of War: Ragnarök</strong></h1>
+
+          
+          <a href="pages/personagens/cadastro.php"><button class="btn btn-outline-success ms-5">Cadastrar Personagens</button></a>
         </div>
         <div>Pesquisar</div>
         <input type="text" name="" id="filter" class="border rounded" style="margin-bottom: 10px;">
@@ -117,7 +101,10 @@ include "/xampp/htdocs/GodofWarR/app/templates/header.php"
       </div>
     </main>
   </div>
-<?php
-include "/xampp/htdocs/GodofWarR/app/templates/header.php"
 
+  <script src="assets/js/filter.js"></script>
+
+<?php
+  include "/xampp/htdocs/GodofWarR/app/templates/footer.php"
 ?>
+

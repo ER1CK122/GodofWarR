@@ -6,7 +6,7 @@
 
   <div class="flex">
     <div class="mr-6 no-overflow hero" style="position: relative">
-      <img src="../assets/images/leviatan.jpg" alt="" class="mr-6">
+      <img src="assets/images/leviatan.jpg" alt="" class="mr-6">
       
       <div class="block-feature flex flex-collumn end ">
         <div class= "moved" style="padding: 16px;">
@@ -20,7 +20,7 @@
     </div>
 
     <div class="mr-6 no-overflow hero" style="position: relative">
-      <img src="../assets/images/chaos.jpg" class="mr-6">
+      <img src="assets/images/chaos.jpg" class="mr-6">
       
       <div class="block-feature flex flex-collumn end ">
         <div class= "moved" style="padding: 16px;">

@@ -1,8 +1,10 @@
 <?php
 include "../../templates/header.php"
 ?>
-      <main style="width: 100%; height:100vh;" class="border-start">
-      <div style="height:90px" class="border-bottom"></div>
+    <main style="width: 100%; height:100vh;" class="border-start">
+      <?php
+        include "../../templates/header-2.php"
+      ?>
 
         <div class="container pt-4">
           <h1>Cadastrar Personagens</h1>

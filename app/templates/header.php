@@ -29,5 +29,5 @@
           <a class="nav-link active" aria-current="page" href="pages/lugares/lista.php"><img src="assets/images/maps-icon.png" alt="" style="margin-right: 5px;"> - Lugares</a>
         </li>
       </ul>
-
+      
     </nav>

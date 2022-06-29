@@ -2,7 +2,9 @@
 include "../../templates/header.php"
 ?>
       <main style="width: 100%; height:100vh;" class="border-start">
-      <div style="height:90px" class="border-bottom"></div>
+      <?php
+        include "../../templates/header-2.php"
+      ?>
 
       <div class="container">
         <div class="d-flex" style="margin-top: 10px;">
@@ -17,7 +19,7 @@ include "../../templates/header.php"
         <table class="table table-dark table-striped" id="myTable">
           <thead>
             <tr>
-              <th>Codigo</th>
+              <th>ID</th>
               <th>Nome dos Lugares</th>
               <th>Mitologia</th>
               <th>Nome na Mitologia</th>

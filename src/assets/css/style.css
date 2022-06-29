@@ -1,10 +1,10 @@
-@import url(/src/assets/css/token.css);
+@import url(./token.css);
 
 body {
   color: #fff;
   font-size: 16px;
   line-height: 150%;
-  background-image: url(/src/assets/images/GOWL.jpg);
+  background-image: url(../images/GOWL.jpg);
   background-repeat: no-repeat;
   background-color: black;
 }
@@ -103,7 +103,7 @@ p strong {
 }
 
 header {
-  background-image: url(/src/assets/images/GOWL.jpg);
+  background-image: url(../images/GOWL.jpg);
 }
 
 th {

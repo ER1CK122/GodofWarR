@@ -1,5 +1,7 @@
 <?php
-include "../../templates/header.php"
+include "../../templates/header.php";
+
+include "../../assets/configs/configSql.php";
 ?>
   <main style="width: 100%; height:100vh;" class="border-start">
     <?php
@@ -16,7 +18,7 @@ include "../../templates/header.php"
       <div>Pesquisar</div>
       <input type="text" name="" id="filter" class="border rounded" style="margin-bottom: 10px;">
 
-      <table class="table table-dark table-striped" id="myTable">
+      <table class="table table-dark table-striped">
         <thead>
           <tr>
             <th>ID</th>
@@ -27,7 +29,7 @@ include "../../templates/header.php"
           </tr>
         </thead>
         
-        <tbody>
+        <tbody id="myTable">
           <tr>
             <th>1-</th>
             <th>Kratos</th>

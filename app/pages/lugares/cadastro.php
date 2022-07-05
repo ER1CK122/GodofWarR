@@ -1,5 +1,7 @@
 <?php
-include "../../templates/header.php"
+include "../../templates/header.php";
+
+include "../../assets/configs/configSql.php";
 ?>
     <main style="width: 100%; height:100vh;" class="border-start">
       <?php
@@ -12,7 +14,7 @@ include "../../templates/header.php"
           <form action="">
             <div class="row mb-3">
               <div class="col-12 col-sm-6">
-                <label for="name-person">Nome do Lucar:</label>        
+                <label for="name-person">Nome do Lugar:</label>     
                 <input type="text" name="name-person" id="name-person" class="form-control" style="margin-bottom: 8px; padding:3px">
               </div>
 

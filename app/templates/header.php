@@ -28,6 +28,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="pages/lugares/lista.php"><img src="assets/images/maps-icon.png" alt="" style="margin-right: 5px;"> - Lugares</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="pages/usuarios/lista.php"><img src="assets/images/usuario 1.png" alt="" style="margin-right: 5px;"> - Usuarios</a>
+        </li>
       </ul>
       
     </nav>

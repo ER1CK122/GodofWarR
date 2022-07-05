@@ -1,5 +1,7 @@
 <?php
-include "../../templates/header.php"
+include "../../templates/header.php";
+
+include "../../assets/configs/configSql.php";
 ?>
       <main style="width: 100%; height:100vh;" class="border-start">
       <?php

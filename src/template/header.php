@@ -27,7 +27,7 @@
             <li class="navbar-item"><a href="pages/personagens.php">Personagens</a></li>
             <li class="navbar-item"><a href="#requisitos">Requisitos</a></li>
             <li class="navbar-item"><a href="https://store.playstation.com/pt-br/concept/10001850" target="_blank">Onde Compra</a></li>
-            <li class="navbar-item"><a href="../app/pages/personagens/lista.php">Entrar</a></li>
+            <li class="navbar-item"><a href="../app/login/login.php">Entrar</a></li>
           </ul>
 
         </nav>

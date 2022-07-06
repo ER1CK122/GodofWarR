@@ -10,5 +10,4 @@
         die("Connection Falied: " . mysqli_connect_error());
     }
 
-    mysqli_close($conn);
 ?>

@@ -2,6 +2,11 @@
 include "../../templates/header.php";
 
 include "../../assets/configs/configSql.php";
+
+$query = "SELECT*FROM usuarios";
+
+$resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . '' . mysqli_error($conn));
+
 ?>
   <main style="width: 100%; height:100vh;" class="border-start">
     <?php
@@ -11,11 +16,11 @@ include "../../assets/configs/configSql.php";
     <div class="container">
       <div class="d-flex" style="margin-top: 10px;">
         <h1 class=""><strong>Lista de Personagens de God of War: Ragnarök</strong></h1>
-
-        
-        <a href="pages/personagens/cadastro.php"><button class="btn btn-outline-success ms-5">Cadastrar Personagens</button></a>
+      
       </div>
+      
       <div>Pesquisar</div>
+      
       <input type="text" name="" id="filter" class="border rounded" style="margin-bottom: 10px;">
 
       <table class="table table-dark table-striped">
@@ -24,19 +29,25 @@ include "../../assets/configs/configSql.php";
             <th>ID</th>
             <th>Nome de Usuario</th>
             <th>E-mail</th>
-            <th>CPF</th>
+            <th>Senha</th>
             <th>Status</th>
           </tr>
         </thead>
-        
         <tbody id="myTable">
-          <tr>
-            <th>1-</th>
-            <th>ErickN</th>
-            <th>ercknunes53@gmail.com</th>
-            <th>100-442-459.04</th>
-            <th>Aprovado</th>
-          </tr>
+        <?php 
+            while($dados = mysqli_fetch_assoc($resul_query)){; 
+          ?>
+            <tr>
+              <td><?php echo $dados["id"];?></td>
+              <td><?php echo $dados["nome"];?></td>
+              <td><?php echo $dados["email"];?></td>
+              <td><?php echo $dados["senha"];?></td>
+              <td><?php echo $dados["status"];?></td>
+            </tr>
+          <?php 
+            }
+            mysqli_close($conn);
+          ?>
         </tbody>
       </table>
     </div>
@@ -46,6 +57,6 @@ include "../../assets/configs/configSql.php";
   <script src="assets/js/filter.js"></script>
 
 <?php
-  include "/xampp/htdocs/GodofWarR/app/templates/footer.php"
+  include "../../templates/footer.php"
 ?>
 

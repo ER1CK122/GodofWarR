@@ -2,10 +2,15 @@
 include "../../templates/header.php";
 
 include "../../assets/configs/configSql.php";
+
+$query = "SELECT*FROM personagens";
+
+$resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . '' . mysqli_error($conn));
+
 ?>
   <main style="width: 100%; height:100vh;" class="border-start">
     <?php
-      include "../../templates/header-2.php"
+      include "../../templates/header-2.php";
     ?>
 
     <div class="container">
@@ -13,7 +18,7 @@ include "../../assets/configs/configSql.php";
         <h1 class=""><strong>Lista de Personagens de God of War: Ragnarök</strong></h1>
 
         
-        <a href="pages/personagens/cadastro.php"><button class="btn btn-outline-success ms-5">Cadastrar Personagens</button></a>
+        <a href="pages/personagens/cadastro.php"><button class="btn btn-outline-success ms-5" style="margin-top: 5px;">Cadastrar Personagens</button></a>
       </div>
       <div>Pesquisar</div>
       <input type="text" name="" id="filter" class="border rounded" style="margin-bottom: 10px;">
@@ -28,78 +33,23 @@ include "../../assets/configs/configSql.php";
             <th>Status</th>
           </tr>
         </thead>
-        
         <tbody id="myTable">
+       <?php 
+          while($dados = mysqli_fetch_assoc($resul_query)){; 
+        ?>
+       
           <tr>
-            <th>1-</th>
-            <th>Kratos</th>
-            <th>Grega, Nórdica</th>
-            <th>Deus da Guerra</th>
-            <th>Vivo</th>
+            <td><?php echo $dados["id"];?></td>
+            <td><?php echo $dados["nomePersonagem"];?></td>
+            <td><?php echo $dados["mitologia"];?></td>
+            <td><?php echo $dados["nomeMitologia"];?></td>
+            <td><?php echo $dados["status"];?></td>
           </tr>
-          <tr>
-            <th>2-</th>
-            <th>Atreus</th>
-            <th>Nórdica</th>
-            <th>Futuro Deus da Mentira</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>3-</th>
-            <th>Mimir</th>
-            <th>Nórdica</th>
-            <th>O Sábio</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>4-</th>
-            <th>Freya</th>
-            <th>Nórdica</th>
-            <th>Deusa do Amor</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>5-</th>
-            <th>Brok</th>
-            <th>Nórdica</th>
-            <th>Os Irmãos Ferreiros</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>6-</th>
-            <th>Sindri</th>
-            <th>Nórdica</th>
-            <th>Os Irmãos Ferreiros</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>7-</th>
-            <th>Durlin</th>
-            <th>Nórdica</th>
-            <th>Mercador dos Deuses</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>8-</th>
-            <th>Týr</th>
-            <th>Nórdica</th>
-            <th>Deus do céu</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>9-</th>
-            <th>Thor</th>
-            <th>Nórdicaa</th>
-            <th>Deus dos Trovões</th>
-            <th>Vivo</th>
-          </tr>
-          <tr>
-            <th>10-</th>
-            <th>Angrboda</th>
-            <th>Nórdica</th>
-            <th>Jotun</th>
-            <th>Vivo</th>
-          </tr>
+        
+        <?php 
+          }
+          mysqli_close($conn);
+        ?>
         </tbody>
       </table>
     </div>
@@ -109,6 +59,6 @@ include "../../assets/configs/configSql.php";
   <script src="assets/js/filter.js"></script>
 
 <?php
-  include "/xampp/htdocs/GodofWarR/app/templates/footer.php"
+  include "../../templates/footer.php"
 ?>
 

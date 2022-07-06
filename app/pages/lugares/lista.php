@@ -2,6 +2,13 @@
 include "../../templates/header.php";
 
 include "../../assets/configs/configSql.php";
+
+include "../../assets/configs/configSql.php";
+
+$query = "SELECT*FROM lugares";
+
+$resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . '' . mysqli_error($conn));
+
 ?>
       <main style="width: 100%; height:100vh;" class="border-start">
       <?php
@@ -13,7 +20,7 @@ include "../../assets/configs/configSql.php";
           <h1 class=""><strong>Lista de Lugares de God of War: Ragnarök</strong></h1>
 
           
-          <a href="pages/lugares/cadastro.php"><button class="btn btn-outline-success ms-5">Cadastrar Lugares</button></a>
+          <a href="pages/lugares/cadastro.php"><button class="btn btn-outline-success ms-5" style="margin-top: 5px;">Cadastrar Lugares</button></a>
         </div>
         <div>Pesquisar</div>
         <input type="text" name="" id="filter" class="border rounded" style="margin-bottom: 10px;">
@@ -28,78 +35,20 @@ include "../../assets/configs/configSql.php";
               <th>Status</th>
             </tr>
           </thead>
-          
           <tbody id="myTable">
+          <?php 
+            while($dados = mysqli_fetch_assoc($resul_query)){; 
+          ?>
             <tr>
-              <th>1-</th>
-              <th>Midgard</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Humanos</th>
-              <th>Vivo</th>
+              <td><?php echo $dados["id"];?></td>
+              <td><?php echo $dados["nomeLugares"];?></td>
+              <td><?php echo $dados["mitologia"];?></td>
+              <td><?php echo $dados["nomeMitologia"];?></td>
+              <td><?php echo $dados["status"];?></td>
             </tr>
-            <tr>
-              <th>2-</th>
-              <th>Asgard</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Aesir</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>3-</th>
-              <th>Vanaheim</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Vanir</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>4-</th>
-              <th>Jotunheim</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Gigantes</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>5-</th>
-              <th>Niflheim</th>
-              <th>Nórdica</th>
-              <th>O Reino do Gelo</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>6-</th>
-              <th>Muspelheim</th>
-              <th>Nórdica</th>
-              <th>O Reino do Fogo</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>7-</th>
-              <th>Alfheim</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Elfos</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>8-</th>
-              <th>Svartalfheim</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Anões</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>9-</th>
-              <th>Helheim</th>
-              <th>Nórdica</th>
-              <th>O Reino dos Mortos</th>
-              <th>Vivo</th>
-            </tr>
-            <tr>
-              <th>10-</th>
-              <th>Reino do Céu</th>
-              <th>Grega</th>
-              <th>Lugar dos Deuses</th>
-              <th>Vivo</th>
-            </tr>
+          <?php 
+            }         
+          ?>
           </tbody>
         </table>
       </div>
@@ -109,6 +58,7 @@ include "../../assets/configs/configSql.php";
   <script src="assets/js/filter.js"></script>
 
 <?php
-  include "/xampp/htdocs/GodofWarR/app/templates/footer.php"
+   mysqli_close($conn);
+  include "../../templates/footer.php"
 ?>
 

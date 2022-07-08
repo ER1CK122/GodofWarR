@@ -1,9 +1,7 @@
 <?php
 include "../../templates/header.php";
 
-include "../../assets/configs/configSql.php";
-
-include "../../assets/configs/configSql.php";
+include "../../assets/configs/conexaoSql.php";
 
 $query = "SELECT*FROM lugares";
 
@@ -37,7 +35,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
           </thead>
           <tbody id="myTable">
           <?php 
-            while($dados = mysqli_fetch_assoc($resul_query)){; 
+            while($dados = mysqli_fetch_array($resul_query)){; 
           ?>
             <tr>
               <td><?php echo $dados["id"];?></td>
@@ -58,7 +56,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
   <script src="assets/js/filter.js"></script>
 
 <?php
-   mysqli_close($conn);
-  include "../../templates/footer.php"
+  include "../../templates/footer.php";
+  
+  mysqli_close($conn);
 ?>
-

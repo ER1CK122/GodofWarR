@@ -1,7 +1,7 @@
 <?php
 include "../../templates/header.php";
 
-include "../../assets/configs/configSql.php";
+include "../../assets/configs/conexaoSql.php";
 
 $query = "SELECT*FROM personagens";
 
@@ -35,7 +35,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
         </thead>
         <tbody id="myTable">
        <?php 
-          while($dados = mysqli_fetch_assoc($resul_query)){; 
+          while($dados = mysqli_fetch_array($resul_query)){; 
         ?>
        
           <tr>
@@ -46,10 +46,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
             <td><?php echo $dados["status"];?></td>
           </tr>
         
-        <?php 
-          }
-          mysqli_close($conn);
-        ?>
+        <?php } ?>
         </tbody>
       </table>
     </div>
@@ -59,6 +56,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
   <script src="assets/js/filter.js"></script>
 
 <?php
-  include "../../templates/footer.php"
+  include "../../templates/footer.php";
+  
+  mysqli_close($conn);
 ?>
-

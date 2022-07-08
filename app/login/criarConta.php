@@ -1,5 +1,5 @@
 <?php
-include "../assets/configs/configSql.php";
+include "../assets/configs/conexaoSql.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,35 +29,40 @@ include "../assets/configs/configSql.php";
       <div class="container d-flex flex-column justify-content-center" style="height: 90vh">
         <h1>Criar Conta</h1>
 
-        <form action="">
+        <form action="" id="cadUsuario">
           <div class="row mb-3">
             <div class="col-12 col-sm-6">
-              <label for="name-person">Nome de Usuario:</label>        
-              <input type="text" name="name-person" id="name-person" class="form-control" style="margin-bottom: 8px; padding:3px">
+              <label for="name">Nome de Usuario:</label>        
+              <input type="text" name="name" id="name" class="form-control" style="margin-bottom: 8px; padding:3px" />
             </div>
 
             <div class="col-12 col-sm-6">
-              <label for="mythology">E-mail:</label>
-              <input type="text" name="mythology" id="mythology" class="form-control" style="margin-bottom: 8px; padding:3px">
+              <label for="email">E-mail:</label>
+              <input type="text" name="email" id="email" class="form-control" style="margin-bottom: 8px; padding:3px" />
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-12 col-sm-6">
-              <label for="name-mythology">Senha:</label>
-              <input type="text" name="name-mythology" id="name-mythology" class="form-control" style="margin-bottom: 8px; padding:3px">
+              <label for="senha">Senha:</label>
+              <input type="text" name="senha" id="senha" class="form-control" style="margin-bottom: 8px; padding:3px" />
             </div>              
 
             <div class="col-12 col-sm-6">
-              <label for="">Status:</label>
-              <select name="" id="status" class="form-control" style="margin-bottom: 8px;"><option value="">Aprovado</option><option value="">Reprovado</option></select>
+              <label for="status">Status:</label>
+              <select name="status" id="status" class="form-control" style="margin-bottom: 8px;"><option value="Aprovado">Aprovado</option><option value="Reprovado">Reprovado</option></select>
             </div>
           </div>
 
-          <button type="button" class="btn btn-outline-success">Enviar Cadastro</button> 
+          <button type="button" class="btn btn-outline-success" id="cadastro">Enviar Cadastro</button> 
         </form>          
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/cadastro.js"></script>  
   </body>
 </html>
+
+<?php
+  mysqli_close($conn);
+?>

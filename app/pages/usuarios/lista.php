@@ -10,7 +10,7 @@ $resul_query = mysqli_query($conn, $query) or die(' Erro na query:'. $query . ''
 ?>
   <main style="width: 100%; height:100vh;" class="border-start">
     <?php
-      include "../../templates/header-2.php"
+      include "../../templates/header-2.html"
     ?>
 
     <div class="container">

@@ -1,15 +1,15 @@
 <?php
-include "../../templates/header.php";
+include "../../template/header.php";
 
 include "../../assets/configs/conexaoSql.php";
 ?>
-    <main style="width: 100%; height:100vh;" class="border-start">
+    <main class="h-100 w-100">
       <?php
-        include "../../templates/header-2.php"
+        include "../../template/header-2.php"
       ?>
 
         <div class="container pt-4">
-          <h1>Cadastrar Personagens</h1>
+        <h1 class="fs-2 fw-bold mb-2">Cadastrar Personagem</h1>
 
           <form action="">
             <div class="row mb-3">
@@ -30,10 +30,6 @@ include "../../assets/configs/conexaoSql.php";
                 <input type="text" name="nomeMitologia" id="nomeMitologia" class="form-control" style="margin-bottom: 8px; padding:3px">
               </div>              
 
-              <div class="col-12 col-sm-6">
-                <label for="status">Status:</label>
-                <select name="status" id="status" class="form-control" style="margin-bottom: 8px;"><option value="">Vivo</option><option value="">Morto</option></select>
-              </div>
             </div>
 
             <button type="button" class="btn btn-outline-success" id="cadastro">Enviar Cadastro</button> 
@@ -41,7 +37,7 @@ include "../../assets/configs/conexaoSql.php";
         </div>
     </main>
 <?php
-  include "../../templates/footer.php";
+  include "../../template/footer.php";
   
   mysqli_close($conn);
 ?>

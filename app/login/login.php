@@ -7,9 +7,10 @@
     
     <base href="http://localhost/GODOFWARR/app/">
 
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/cms.css">
+    <link rel="shortcut icon" type="images/x-icon" href="assets/images/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <title>God of War: Ragnarök</title>
@@ -24,21 +25,21 @@
     </header>
 
     <main class="d-flex align-items-center justify-content-center" style="width: 100%; height: 90vh;">
-      <div style="max-width: 600px;">
-        <h1 class="mb-3">Entrar no <strong>God of War: Ragnarök</strong></h1>
+      <div style="max-width: 1100px;">
+        <h1 class="fs-2 mb-3">Entrar no <strong>God of War: Ragnarök</strong></h1>
 
         <form action="">
           <div class="mb-2">     
             <label for="name-person">Email:</label>        
-            <input type="text" name="name-person" id="name-person" class="form-control" style="margin-bottom: 8px; padding:3px">
+            <input type="email" name="name-person" id="name-person" class="form-control" style="margin-bottom: 8px; padding:3px">
           </div>
           
           <div class="mb-2">
             <label for="mythology">Senha:</label>
-            <input type="text" name="mythology" id="mythology" class="form-control" style="margin-bottom: 8px; padding:3px">
+            <input type="password" name="password-person" id="password-person" class="form-control" style="margin-bottom: 8px; padding:3px">
           </div>
 
-          <a href="pages/personagens/lista.php"><button type="button" class="btn btn-outline-success">Logar</button></a> 
+          <a href="pages/personagens/lista.php"><button type="button" class="btn btn-outline-success">Entrar</button></a> 
         </form>          
       </div>
     </main>

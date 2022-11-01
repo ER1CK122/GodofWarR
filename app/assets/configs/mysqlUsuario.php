@@ -1,14 +1,12 @@
 <?php
-  include "../../assets/configs/conexaoSql.php";
+  include "./conexaoSql.php";
 
-  $name = $_POST['name'];
+  $nome = $_POST['nome'];
   $email = $_POST['email'];
   $senha = $_POST['senha'];
-  $status = $_POST['status'];
 
-  $slq = "INSERT INTO usuarios VALUES (default, '$name', '$email', '$senha', '$status')";
+  $slq = "INSERT INTO usuarios VALUES (default, '{$nome}', '{$email}', '{$senha}')";
   mysqli_query($conn, $sql) or die(mysqli_error($conn));
   $response = array("success" => true);
-  echo json_encode($response);
-
+	echo json_encode($response);
 ?>
